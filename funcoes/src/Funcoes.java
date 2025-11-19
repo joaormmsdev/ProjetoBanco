@@ -5,7 +5,7 @@ public class Funcoes {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int a,b,c,res;
+        int a,b,c;
 
         System.out.println("Enter three numbers: ");
         a = sc.nextInt();
