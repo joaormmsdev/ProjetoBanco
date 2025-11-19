@@ -2,24 +2,39 @@
 import java.util.Scanner;
 
 public class Funcoes {
-    public static void main(String[] args) throws Exception {
-    Scanner sc = new Scanner(System.in);
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
-    int a,b,c;
+        int a,b,c,res;
 
-    System.out.println("Enter three numbers: ");
-    a = sc.nextInt();
-    b = sc.nextInt();
-    c = sc.nextInt();
+        System.out.println("Enter three numbers: ");
+        a = sc.nextInt();
+        b = sc.nextInt();
+        c = sc.nextInt();
 
-    if (a > b && a > c){
-        System.out.println("maior: " + a);
+        int Higher = max(a,b,c);
+
+        showResult(Higher);
     }
-    else if(b > a && b > c){
-        System.out.println("maior: " + b);
+
+    public static int max(int x, int y, int z){
+        int aux;
+        if (x > y && x > z){
+            aux = x;
+        }
+        else if (y > z){
+            aux = y;
+        }
+        else{
+            aux = z;
+        }
+
+        return aux;
+
     }
-    else{
-        System.out.println("maior: " + c);
+    
+    public static void showResult(int value){
+        System.out.println("Higher = " + value);
     }
-    }
+
 }
