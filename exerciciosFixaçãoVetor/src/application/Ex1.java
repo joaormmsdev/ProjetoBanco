@@ -13,14 +13,18 @@ public class Ex1 {
         
         int[] vetor = new int[n];
 
-        for(int i =0; i< 0;i++){
+        for(int i =0; i< n;i++){
             System.out.println("Digite um numero");
             vetor[i]= sc.nextInt();
         }
 
+        System.out.println("numeros negativos");
         for (int i = 0; i< 0; i++){
-            if ()
-        }
+            if (vetor[i]< 0){
+                System.out.println(vetor[i]);
+            }
+                
+            }
 
 
     }
